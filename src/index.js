@@ -7,7 +7,13 @@
  * @param {number} maxSecond
  * @returns {number}
  */
-export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {};
+export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
+    const maxNumber = Math.max(maxFirst, maxSecond);
+    const minNumber = Math.min(minFirst, minSecond);
+    const result = maxNumber * minNumber;
+
+    return result;
+};
 
 /**
  * Функция принимает один числовой аргумент, это радиус круга. Функция должна
@@ -16,7 +22,11 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {};
  * @param {number} radius
  * @returns {number}
  */
-export const getSquareOfCircle = (radius) => {};
+export const getSquareOfCircle = (radius) => {
+    const radiusResult = Math.PI * radius * radius;
+
+    return radiusResult;
+};
 
 /**
  * Функция принимает число и точность к которой нужно округлить
@@ -26,7 +36,9 @@ export const getSquareOfCircle = (radius) => {};
  * @param {number} accuracy
  * @returns {number}
  */
-export const getFixedValue = (number, accuracy) => {};
+export const getFixedValue = (number, accuracy) => {
+    return Math.round()
+};
 
 /**
  * Если целая часть числа четная, то срабатывает Math.floor для этого числа
@@ -34,7 +46,15 @@ export const getFixedValue = (number, accuracy) => {};
  * @param {number} number
  * @returns {number}
  */
-export const getFlooroCeil = (number) => {};
+export const getFlooroCeil = (number) => {
+    const isEven = Math.trunc(number % 2) === 0;
+    if (isEven) {
+        return  Math.floor(number);
+    } else {
+        return  Math.ceil(number);
+    }
+};
+
 
 /**
  * Мы передаем два числа, от какого и до какого числа и функция должна
@@ -44,4 +64,8 @@ export const getFlooroCeil = (number) => {};
  * @param {number} to
  * @returns {number}
  */
-export const randomizer = (from, to) => {};
+export const randomizer = (from, to) => {
+    const random = Math.random();
+    const result = Math.round(random * 10);
+    return result;
+};
