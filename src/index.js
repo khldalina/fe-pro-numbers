@@ -23,9 +23,8 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
  * @returns {number}
  */
 export const getSquareOfCircle = (radius) => {
-    const radiusResult = Math.PI * radius * radius;
-
-    return radiusResult;
+    const result = Math.PI * radius * radius;
+    return result;
 };
 
 /**
@@ -65,7 +64,6 @@ export const getFlooroCeil = (number) => {
  * @returns {number}
  */
 export const randomizer = (from, to) => {
-    const random = Math.random();
-    const result = Math.round(random * 10);
+    const result = Math.round(Math.random()*10);
     return result;
 };
