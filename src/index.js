@@ -64,6 +64,8 @@ export const getFlooroCeil = (number) => {
  * @returns {number}
  */
 export const randomizer = (from, to) => {
-    const result = Math.round(Math.random()*10);
+    for (let i=0; i<=20; i++){
+        const result = Math.round(Math.random()*10);
+    }
     return result;
 };
