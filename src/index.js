@@ -10,9 +10,7 @@
 export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
     const maxNumber = Math.max(maxFirst, maxSecond);
     const minNumber = Math.min(minFirst, minSecond);
-    const result = maxNumber * minNumber;
-
-    return result;
+    return maxNumber * minNumber;
 };
 
 /**
@@ -23,8 +21,7 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
  * @returns {number}
  */
 export const getSquareOfCircle = (radius) => {
-    const result = Math.PI * radius * radius;
-    return result;
+    return Math.PI * radius * radius;
 };
 
 /**
